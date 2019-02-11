@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111035186-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111035186-2');
+</script>
+  
+
+    <title>Desaparecidos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--meta data for sharing links on Facebook-->
+    <meta property="og:title" content="Desaparecidos"/>
+    <meta property="og:url" content="http://roqueleal.me/arg/arg.html"/>
+    <meta property="og:description" content="This is an example of a storymap."/>
+    <meta property="og:image" content="./img/social.png"/>
+
+  <!--mapbox-->
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.18.0/mapbox-gl.css' rel='stylesheet' />
+  <!--mapbox-->
+
+    <!--add required stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!--leaflet css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css">
+
+
+    <!--add favicon for the web page-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="./css/storymap.css">
+    <!--add required libraries-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js"></script>
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!--boostrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!--leaflet.ajax for asynchronously adding geojson data-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-ajax/2.1.0/leaflet.ajax.min.js"></script>
+
+    <!--mini globle map-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+    <script src="./js/globeminimap.js"></script>
+
+    <!--story map plugin-->
+    <script src="./js/storymap.js"></script>
+</head>
+<body>
+
+<div id="storymap" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 storymap-story">
+            <section data-scene="overview" data-background="./img/desaparecidos.mp4">
+                <div class="fullscreen text-center">
+
+                    <h1 class="display-4 d-flex justify-content-center">Desaparecidos</h1>
+
+
+                    <small class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)">Análisis espacial
+                        de las víctimas de desaparición forzada y asesinato en Argentina durante los años 1966 a 1983.
+                    </small>
+                </div>
+            </section>
+            <section data-scene="Argentina">
+                <h2>Argentina</h2>
+                 <p>La doctrina de Seguridad Nacional de 1966, y su aplicación práctica: el terrorismo de
+                Estado de 1976, fue la articulación progresiva del
+                accionar represivo ilegal entre distintos actores institucionales, estatales y paraestatales, policiales
+                y militares, que encuentra su expresión acabada y final en la instauración
+                plena del plan de exterminio de opositores políticos por parte de la última dictadura cívico-militar en la Argentina de los años 1966 a 1983.</p>
+                
+                <p>“Quince mil desaparecidos, diez mil presos, cuatro mil muertos, decenas de miles de desterrados son
+                    la cifra desnuda de ese terror” acusa Rodolfo Walsh, haciendo referencia al terror dictatorial en su
+                    “Carta abierta de un escritor a la Junta Militar” hecha pública el 24 de marzo de 1977.</p>
+                    <p> Esta descripción contemporánea a los hechos fue un temprano y certero diagnóstico que, entre otros,
+                        contribuyó a construir la bandera histórica, el justo reclamo, de los organismos de Derechos Humanos
+                        por las 30.000 víctimas de la represión ilegal.</p>
+                </section>
+
+            <section data-scene="Centros">
+                <h2> Centros Clandestinos de Detención</h2>
+                <p>El período 1966 a 1983, comprende dos etapas autodenominadas Revolución Argentina y Proceso de Reorganización Nacional,
+                 para los que se han acuñado los conceptos distintivos de Estado Militar y Estado Terrorista. </p>
+                <p>En relación a este último período, pueden señalarse como hitos la
+                    implantación del Estado de sitio en noviembre de 1974, y los decretos presidenciales de febrero y
+                    octubre de 1975 que confirieron potestad a las Fuerzas Armadas para intervenir en el orden interno
+                    con el fin de “neutralizar y/o aniquilar el accionar subversivo”, potestad que los mandos castrenses
+                    reconvirtieron en orden militar de exterminio de las personas perseguidas por razones políticas.</p>
+                <p>En la actualidad se encuentra plenamente probado, en general y en particular, el uso sistemático en
+                    la época de un estimado a la fecha de 762 dependencias de funcionamiento clandestino como centros de reclusión y
+                    exterminio. No obstante, la clandestinidad del accionar de los grupos terroristas, impiden todavía hoy el conocimiento cabal de la real dimensión del plan
+                    represivo y de los recursos que el terrorismo de Estado debió habilitar para su concreción.</p>
+                    <img src="./img/002.jpg" class="img-responsive img-thumbnail" alt="responsive image"
+                    alt-text="Represion">    
+                    <small class="d-flex justify-content-center" style="color: rgba(134, 132, 132, 0.95)"> Centro Clandestino de Detención ESMA.
+                    </small> 
+                </section>
+            <section data-scene="Victimas">
+                <h2>Las Victimas</h2>
+                <p>Desde 1983 a la fecha la sociedad argentina realiza destacados esfuerzos en conocer con mayor profundidad los hechos referidos a
+                    violaciones a los Derechos Humanos, las características de los delitos perpetrados, las víctimas, sus
+                    victimarios a razón de garantizar los derechos fundamentales a la Memoria, la Verdad y la Justicia. </p>
+                <p> El Ministerio de Justicia y Derechos Humanos en su Registro Unificado de Victimas del Terrorismo de Estado (RUVTE) estima hasta el último trimestre del 2018, un total de 9.537 víctimas producto del accionar represivo ilegal.  </p>
+                <p> Igualmente, otros casos que deben haber efectivamente ocurrido, son estimados por los movimientos de Derechos Humanos en 30.000 Víctimas cuyos expedientes se continúan investigando. </p>
+                <img src="./img/001.jpg" class="img-responsive img-thumbnail" alt="responsive image"
+                alt-text="Represion">    
+                <small class="d-flex justify-content-center" style="color: rgba(134, 132, 132, 0.95)">Represión Militar.
+                </small>       
+            </section>
+  
+            <section data-scene="Pais" data-background="./img/default.jpg">    
+                <div class="fullscreen text-center">
+                   <iframe width="100%" 
+                   height="620" 
+                   frameborder="0"
+                    src="https://vargasgarcia.carto.com/builder/107c2be6-d55a-4eb5-a4bd-8dce89cb6eff/embed" 
+                    >
+                   </iframe>
+                </div>
+
+            </section>
+            <section data-scene="Region" data-background="./img/default.jpg">
+                <div class="fullscreen text-center">
+                   <iframe width="100%" 
+                   height="620" 
+                   frameborder="0"
+                    src="https://vargasgarcia.carto.com/builder/bb8806f5-ec16-4ed3-ad45-7fc06c2dc382/embed" 
+                    >
+                   </iframe>
+                </div>
+            </section>
+
+            <section data-scene="Buenosaires" data-background="./img/default.jpg">
+                <div class="fullscreen text-center">
+                   <iframe width="100%" 
+                   height="620" 
+                   frameborder="0"
+                    src="https://vargasgarcia.carto.com/builder/6c4d9af5-faa8-47a7-8e3f-f1572cbdf219/embed" 
+                    >
+                   </iframe>
+                </div>
+            </section>
+
+            <section data-scene="Cordoba" data-background="./img/default.jpg">
+                <div class="fullscreen text-center">
+                   <iframe width="100%" 
+                   height="620" 
+                   frameborder="0"
+                    src="https://vargasgarcia.carto.com/builder/eba6699b-b089-403b-878f-2d23db2c30b2/embed" 
+                    >
+                   </iframe>
+                </div>
+            </section>
+            <section data-scene="Rosario" data-background="./img/default.jpg">
+                <div class="fullscreen text-center">
+                   <iframe width="100%" 
+                   height="620" 
+                   frameborder="0"
+                    src="https://vargasgarcia.carto.com/builder/e0c5aa9b-a25a-4f9e-9512-2fe31f94d163/embed" 
+                    >
+                   </iframe>
+                </div>
+            </section>
+            <section data-scene="Tucuman" data-background="./img/default.jpg">
+                <div class="fullscreen text-center">
+                   <iframe width="100%" 
+                   height="620" 
+                   frameborder="0"
+                    src="https://vargasgarcia.carto.com/builder/bc3ff5d6-b847-4d13-ba22-01f1fbf29eb2/embed" 
+                    >
+                   </iframe>
+                </div>
+            </section>
+            <section data-scene="end" data-background="./img/end.jpg">
+                <div class="fullscreen text-center">
+                    <h1 class="display-4 d-flex justify-content-center">Por la Memoria!!!</h1>
+                    <small class="d-flex justify-content-center" style="color: rgba(255,255,255,0.95)"> Agradecimientos
+                    </small>
+                </div>
+               
+        </div>
+        <!--map div-->
+        <div class="col-sm-6 col-md-8 storymap-map"></div>
+    </div>
+
+
+    <dl>
+        <dt>
+                
+
+            <!--facebook icon-->
+            <a class="fab fa-whatsapp-square btn"
+            href="https://wa.me/?text=Hola!%20mira%20a%20esta%20Webapp"></a>
+        </dt>
+        <dt>
+           
+            <!--info icon-->
+            <i class="fas fa-info-circle btn" style="top:60px" data-toggle="modal" data-target="#info-modal"></i>
+        </dt>
+    </dl>
+
+    <!--the info page-->
+    <div class="modal fade" id="info-modal" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Info</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Esta visualización nos presenta un modelo espacial de los hechos que forman parte de período de represión en la Argentina de 1963 a 1983, tiene por fuente los datos públicos del Registro Unificado de Victimas del Terrorismo de Estado
+                            <a href="http://datos.jus.gob.ar/dataset/registro-unificado-de-victimas-del-terrorismo-de-estado-ruvte">RUVTE</a></p>
+                     <p><b>Autor: Roque Leal</b> | Data Scientist
+                    </p>
+                    <p>Se agradecen los derechos de imágenes y videos propiedad de sus respectivos dueños</p>
+                    <p>El video presentado <a href="https://www.youtube.com/watch?v=stCx-UpxgK4&t=155s">30.000 personas siguen desaparecidas en Argentina.</a> proviene de
+                         Youtube. </p>
+                         <p>Esta visualización utiliza tecnologías de inteligencia de localización provistas por <a href="https://carto.com/">Carto</a> y <a></a></a> <a href="https://www.mapbox.com/">MapBox.</a> además del uso de tecnologías de ubicación con <a href="https://www.here.com/">Here.</a>
+                            </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- main javascript -->
+<script type="text/javascript">
+    // Create Legend Contents in html format
+    var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
+    var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
+    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
+    // var layers = {
+    //      layer1: {layer: layer1, legend: legend1},
+    //      layer2: {layer: layer2, legend: legend2}
+    //      ...
+    // }
+    var layers = {
+       
+        Centros: {layer: L.tileLayer('https://api.mapbox.com/styles/v1/roqueleal/cjrz28s9i2d1q1frqyzdtvtj0/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoicm9xdWVsZWFsIiwiYSI6ImNqaHVzZTA4ODBkZjczdmt0cTNrbGo1ZWEifQ.m7xOPPWAFsY-A4cAr5nDAw')},
+        counties: {
+            layer: L.geoJson.ajax(),
+            
+        },
+
+        GEE: {
+            layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
+            legend: forest_legend
+        },
+        desaparecidos: {
+            layer: L.tileLayer('https://api.mapbox.com/styles/v1/roqueleal/cjrxx3w9h091o1fqg8g4080zg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoicm9xdWVsZWFsIiwiYSI6ImNqaHVzZTA4ODBkZjczdmt0cTNrbGo1ZWEifQ.m7xOPPWAFsY-A4cAr5nDAw', {
+               
+            })
+        },
+        basemapbox: {layer: L.tileLayer('https://api.mapbox.com/styles/v1/roqueleal/cjomdnuuv1twx2sllubpua526/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoicm9xdWVsZWFsIiwiYSI6ImNqaHVzZTA4ODBkZjczdmt0cTNrbGo1ZWEifQ.m7xOPPWAFsY-A4cAr5nDAw')}
+    };
+    var scenes = {
+        overview: {lat: -42, lng: -66, zoom: 7, name: 'Cover Page', layers: []},
+        Argentina: {lat: -41.14621, lng: -67.896, zoom: 4.2, name: 'Argentina', layers: []},
+        Centros: {lat: -41.14621, lng: -67.896, zoom: 4.2, name: 'Centros', layers: [layers.Centros]},
+        buenosaires: {lat: -34.660, lng: -58.630, zoom: 11.2, name: 'buenosaires', layers: [layers.Centros]},
+        Victimas: {lat: -41.14621, lng: -67.896, zoom: 4.2, name: 'Victimas', layers: [layers.desaparecidos]},
+        Pais: {lat: -42, lng: -66, zoom: 7, name: 'País', layers: []},
+        Region: {lat: -42, lng: -66, zoom: 7, name: 'Región', layers: []},
+        Buenosaires: {lat: -42, lng: -66, zoom: 7, name: 'Buenos Aires', layers: []},
+        Cordoba: {lat: -42, lng: -66, zoom: 7, name: 'Córdoba', layers: []},
+        Rosario: {lat: -42, lng: -66, zoom: 7, name: 'Rosario', layers: []},
+        Tucuman: {lat: -42, lng: -66, zoom: 7, name: 'San Miguel de Tucumán', layers: []},
+        end: {lat: -42, lng: -66, zoom: 7, name: 'Fin'}
+    };
+    $('#storymap').storymap({
+        scenes: scenes,
+        baselayer: layers.basemapbox,
+        legend: true, // if you do not want a legend feature, you can simply not define the createLegend function.
+        credits: "",
+        loader: true,
+        scalebar: false,
+        flyo: true,
+        navwidget: true,
+        createMap: function () {
+            // create a map in the "map" div, set the view to a given place and zoom
+            var map = L.map($(".storymap-map")[0], {
+                zoomControl: false, 
+                scrollWheelZoom: false,
+                fadeAnimation: true,
+                zoomAnimation: true
+            }).setView([-42, -66], 7);
+            //add an miniglobe
+            new L.Control.GlobeMiniMap({
+                marker: 'red',
+                position: 'bottomright'
+            }).addTo(map);
+            return map;
+        }
+    });
+</script>
+</body>
+</html>
