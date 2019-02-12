@@ -230,14 +230,13 @@
                 <div class="modal-body">
                     <p>Esta visualización nos presenta un modelo espacial de los hechos que forman parte de período de represión en la Argentina de 1963 a 1983, tiene por fuente los datos públicos del Registro Unificado de Victimas del Terrorismo de Estado
                             <a href="http://datos.jus.gob.ar/dataset/registro-unificado-de-victimas-del-terrorismo-de-estado-ruvte">RUVTE</a></p>
-                     <p><b>Autor: Roque Leal</b> | Data Scientist
+                     <p><b>Autor: Roque Leal</b> | Data Scientist | 2019  | Version: 1.0 | MIT License
                     </p>
-                    <p>Se agradecen los derechos de imágenes y videos propiedad de sus respectivos dueños</p>
+                    <p>Se agradecen los derechos de imágenes y videos propiedad de sus respectivos dueños, los textos son tomados del documento <a href="https://www.argentina.gob.ar/sitiosdememoria/ruvte/informe">Informe de Investigación RUVTE-ILID</a></p>
                     <p>El video presentado <a href="https://www.youtube.com/watch?v=stCx-UpxgK4&t=155s">30.000 personas siguen desaparecidas en Argentina.</a> proviene de
                          Youtube. </p>
                          <p>Esta visualización utiliza tecnologías de inteligencia de localización provistas por <a href="https://carto.com/">Carto</a> y <a></a></a> <a href="https://www.mapbox.com/">MapBox.</a> además del uso de tecnologías de ubicación con <a href="https://www.here.com/">Here.</a>
-                            </p>
-                    
+                        </p>
                 </div>
             </div>
         </div>
@@ -246,15 +245,7 @@
 
 <!-- main javascript -->
 <script type="text/javascript">
-    // Create Legend Contents in html format
-    var county_legend = '<i style="background: orange; opacity: 0.5"></i><p><b>Counties</b></p>';
-    var forest_legend = '<i style="background: green; opacity: 0.5"></i><p><b>Forest</b></p>';
-    // For each layer, the first variable is the layer, the second is the legend. The layer variable can be any kinds of layers that leaflet.js supports.
-    // var layers = {
-    //      layer1: {layer: layer1, legend: legend1},
-    //      layer2: {layer: layer2, legend: legend2}
-    //      ...
-    // }
+   
     var layers = {
        
         Centros: {layer: L.tileLayer('https://api.mapbox.com/styles/v1/roqueleal/cjrz28s9i2d1q1frqyzdtvtj0/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoicm9xdWVsZWFsIiwiYSI6ImNqaHVzZTA4ODBkZjczdmt0cTNrbGo1ZWEifQ.m7xOPPWAFsY-A4cAr5nDAw')},
@@ -263,19 +254,16 @@
             
         },
 
-        GEE: {
-            layer: L.tileLayer('http://earthengine.google.org/static/hansen_2013/tree_alpha/{z}/{x}/{y}.png'),
-            legend: forest_legend
-        },
         desaparecidos: {
             layer: L.tileLayer('https://api.mapbox.com/styles/v1/roqueleal/cjrxx3w9h091o1fqg8g4080zg/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoicm9xdWVsZWFsIiwiYSI6ImNqaHVzZTA4ODBkZjczdmt0cTNrbGo1ZWEifQ.m7xOPPWAFsY-A4cAr5nDAw', {
                
             })
         },
         basemapbox: {layer: L.tileLayer('https://api.mapbox.com/styles/v1/roqueleal/cjomdnuuv1twx2sllubpua526/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1Ijoicm9xdWVsZWFsIiwiYSI6ImNqaHVzZTA4ODBkZjczdmt0cTNrbGo1ZWEifQ.m7xOPPWAFsY-A4cAr5nDAw')}
-    };
+          };
+
     var scenes = {
-        overview: {lat: -42, lng: -66, zoom: 7, name: 'Cover Page', layers: []},
+        overview: {lat: -42, lng: -66, zoom: 7, name: 'Inicio', layers: []},
         Argentina: {lat: -41.14621, lng: -67.896, zoom: 4.2, name: 'Argentina', layers: []},
         Centros: {lat: -41.14621, lng: -67.896, zoom: 4.2, name: 'Centros', layers: [layers.Centros]},
         buenosaires: {lat: -34.660, lng: -58.630, zoom: 11.2, name: 'buenosaires', layers: [layers.Centros]},
